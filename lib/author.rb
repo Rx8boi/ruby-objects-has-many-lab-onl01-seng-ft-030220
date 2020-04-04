@@ -14,11 +14,6 @@ class Author
     @@post_count += 1
   end
 
-def posts
-  post.all.select do {|post| post.author == self}
-  end
-end
-
   def add_post_by_title(title)
     post = Post.new(title)
     @posts << post
