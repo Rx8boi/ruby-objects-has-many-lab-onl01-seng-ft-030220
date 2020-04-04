@@ -17,6 +17,7 @@ class Author
 def posts
   @posts.each do |post|
     post
+  end
 end
 
   def add_post_by_title(title)
